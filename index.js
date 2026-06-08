@@ -90,7 +90,6 @@ app.get("/probar-db", async (req, res) => {
     });
   }
 });
-// MOSTRAR SOLO DOCENTES ACTIVOS
 app.get("/docentes", async (req, res) => {
   try {
     const [docentes] = await conexion.query(

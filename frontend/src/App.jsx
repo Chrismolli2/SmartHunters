@@ -99,7 +99,7 @@ function mostrarLogin() {
                     className="form-control"
                     value={usuarioLogin}
                     onChange={(e) => setUsuarioLogin(e.target.value)}
-                    placeholder="Ej: admin"
+                    placeholder="Ingrese el usuario"
                     required
                   />
                 </div>
@@ -111,7 +111,7 @@ function mostrarLogin() {
                     className="form-control"
                     value={passwordLogin}
                     onChange={(e) => setPasswordLogin(e.target.value)}
-                    placeholder="Ej: 12345"
+                    placeholder="Ingrese la contraseña"
                     required
                   />
                 </div>
