@@ -1,0 +1,229 @@
+h1,h2,h3,h4,h5, button, .amiibo-name{
+    font-family: 'Bitter', serif;
+
+}
+#navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+#ribbon{
+    background-color: rgb(216, 219, 26);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgba(131, 120, 21, 0.781) 25px, rgba(131, 120, 21, 0.781) 40px);
+}
+#ribbon::after{
+    content: '';
+    background-color: transparent;
+    display: block;
+    height: 20px;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    left: auto;
+    margin-top: -40px;
+}
+#separator-ribbon{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    background: orange;
+}
+#separator-ribbon .content{
+    width: 150%;
+    height: 150px;
+    margin-left: -25%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+#birthday{
+    background-color: rgb(219, 26, 26);
+    position: relative;
+    margin-top: -20px;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+#birthday img{
+    position: relative;
+    margin-top: -30px;
+}
+
+#games{
+    background: rgb(255,255,255);
+    background: url(../img/cabezeranegra.jpeg),  linear-gradient(0deg, rgb(51, 49, 49) 0%, rgb(50, 56, 51) 57%);
+    background-repeat: repeat-x;
+    background-size: 75%;
+    margin-top: -20px;
+}
+
+#games .row > .col-sm {
+    display: flex;
+}
+
+#games .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#games .card-body {
+    flex-grow: 1;
+}
+
+
+#games .card-img-top {
+  height: 250px;           
+  object-fit: cover;       
+  width: 100%;             
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-border{
+    border: solid 10px white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
+.card-border:hover{
+    transform: scale(1.05);
+}
+
+.text-shadow{
+    text-shadow: 0 3px 3px rgba(0,0,0,0.6);
+}
+#separator-amiibos{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+#separator-amiibos .content{
+    background: url(../img/pngtree-black-plaid-simple-background-image_505180.jpg);
+    width: 110%;
+    height: 100px;
+    margin-left: -5%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+#separator-amiibos-footer{
+    height: 20vw;
+}
+
+
+#amiibos{
+    background: url(../img/pngtree-black-plaid-simple-background-image_505180.jpg),url(../img/pngtree-black-plaid-simple-background-image_505180.jpg);
+    background-repeat: no-repeat, repeat;
+    background-position: bottom center, center center;
+    background-size: 100%, auto;
+}
+
+#amiibos .imagen-docente img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: bottom;
+}
+#contenedor-docentes .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagen-docente {
+  width: 220px;
+  height: 260px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.amiibo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+#contenedor-docentes .col img {
+  height: 250px;
+  object-fit: contain;
+  object-position: bottom;
+}
+.amiibo:hover{
+    transform: scale(1.05);
+}
+
+.amiibo-name {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+}
+
+#play{   
+    background: url(../img/bg-04.png);
+    background-color: rgb(255, 255, 219);
+    background-size: 40px 40px;
+}
+
+.footer {
+  background-color: #000;     
+  color: white;                
+  text-align: center;          
+  padding: 20px 0;             
+  font-family: 'Bitter', serif;
+  border-top: 2px solid orange;
+}
+
+.footer p {
+  margin: 5px 0;               
+}
+
+#titulo-hunters {
+  background-color: yellow;
+  color: white !important;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#sobre-nosotros {
+  background-color: #2f2f2f;
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#sobre-nosotros h2 {
+  font-family: 'Bitter', serif;
+  letter-spacing: 1px;
+  line-height: 1;
+  color: #f8f9fa;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+#sobre-nosotros .sobre-img {
+  max-height: 260px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#sobre-nosotros .row {
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#sobre-nosotros .fs-5 {
+  color: #e2e2e2;
+  font-family: 'Bitter', serif;
+}
+
+.navbar .nav-link.active {
+    color: #ffc107 !important;
+}
